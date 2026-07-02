@@ -69,6 +69,7 @@ http://localhost:8080/
 ## Public Release
 
 - Repository: <https://github.com/aspro45/atelierproof>
+- Live app: <https://atelierproof.vercel.app>
 - Runtime: static HTML/CSS/JavaScript
 - Deployment metadata: `deployment.json`
 
