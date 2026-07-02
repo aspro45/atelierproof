@@ -1,0 +1,14 @@
+.vercel/
+node_modules/
+.env
+.env.*
+*.local
+*.log
+data/
+vault.enc.json
+wallets.json
+projects.json
+private-keys.json
+.vault-password
+__pycache__/
+.pytest_cache/

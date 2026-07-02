@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AtelierProof</title>
+    <meta name="description" content="AtelierProof - GenLayer provenance verification for fashion material claims." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="loomCanvas" aria-hidden="true"></canvas>
+
+    <main class="shell">
+      <header class="topbar">
+        <a class="mark" href="#workbench" aria-label="AtelierProof home">
+          <span class="markGlyph">AP</span>
+          <span>
+            <strong>AtelierProof</strong>
+            <small>studionet material ledger</small>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="workspace">
+          <a href="#workbench">Workbench</a>
+          <a href="#ledger">Ledger</a>
+          <a id="contractLink" href="#" target="_blank" rel="noreferrer">Contract</a>
+        </nav>
+      </header>
+
+      <section class="ticker" aria-label="project stats">
+        <span>Capsule 38</span>
+        <span>4 pieces staged</span>
+        <span>16 proofs indexed</span>
+        <span>GenLayer review ready</span>
+        <span>Vault keys stay local</span>
+      </section>
+
+      <section id="workbench" class="workbench">
+        <aside class="rollIndex" aria-label="piece roll index">
+          <div class="railTitle">
+            <span>Roll index</span>
+            <button id="cycleBtn" class="iconBtn" type="button" title="Cycle selected piece">Next</button>
+          </div>
+          <div id="pieceList" class="pieceList"></div>
+        </aside>
+
+        <section class="tableSurface" aria-label="selected atelier piece">
+          <div class="ruler" aria-hidden="true">
+            <span>0</span><span>12</span><span>24</span><span>36</span><span>48</span><span>60</span>
+          </div>
+          <div id="pieceBoard" class="pieceBoard"></div>
+        </section>
+
+        <aside id="ledger" class="ledgerPanel" aria-label="provenance ledger">
+          <div class="ledgerHead">
+            <span>ledger</span>
+            <strong id="ledgerScore">0%</strong>
+          </div>
+          <div id="ledgerBody" class="ledgerBody"></div>
+        </aside>
+      </section>
+
+      <section class="lowerDeck">
+        <form id="sampleForm" class="registerStrip">
+          <label>
+            Piece name
+            <input id="pieceName" name="pieceName" value="Nocturne utility coat" />
+          </label>
+          <label>
+            Material claim
+            <input id="pieceClaim" name="pieceClaim" value="Deadstock wool, plant-dyed lining, repairable hardware" />
+          </label>
+          <button type="submit">Stage local sample</button>
+        </form>
+        <div class="methodTape" aria-label="contract methods">
+          <span>register_piece</span>
+          <span>add_material_proof</span>
+          <span>add_process_step</span>
+          <span>review_piece_with_genlayer</span>
+          <span>file_objection</span>
+          <span>seal_piece</span>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
