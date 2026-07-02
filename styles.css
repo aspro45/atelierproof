@@ -128,6 +128,46 @@ a {
   background: var(--gold);
 }
 
+.walletMount {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-left: 2px solid var(--line);
+}
+
+.rainbowWallet,
+.rainbowWalletWarn,
+.rainbowAccount,
+.rainbowChain {
+  min-height: 44px;
+  border: 2px solid var(--line);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 var(--gold);
+}
+
+.rainbowWalletWarn {
+  background: var(--red);
+}
+
+.rainbowStack {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.rainbowChain {
+  background: var(--blue);
+}
+
+.rainbowAccount {
+  background: var(--green);
+}
+
 .ticker {
   border-top: 2px solid var(--line);
   border-bottom: 2px solid var(--line);
@@ -561,6 +601,23 @@ a {
   .topnav a {
     min-width: 104px;
     height: 48px;
+  }
+
+  .walletMount {
+    border-left: 0;
+    border-top: 2px solid var(--line);
+    justify-content: stretch;
+  }
+
+  .walletMount > div,
+  .rainbowWallet,
+  .rainbowWalletWarn,
+  .rainbowStack {
+    width: 100%;
+  }
+
+  .rainbowStack {
+    flex-wrap: wrap;
   }
 
   .pieceMeta h1 {

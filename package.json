@@ -1,0 +1,40 @@
+{
+  "name": "atelierproof",
+  "version": "1.0.0",
+  "description": "GenLayer atelier provenance desk with a RainbowKit wallet entry.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aspro45/atelierproof.git"
+  },
+  "keywords": [
+    "genlayer",
+    "rainbowkit",
+    "provenance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aspro45/atelierproof/issues"
+  },
+  "homepage": "https://atelierproof.vercel.app",
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.11",
+    "@tanstack/react-query": "^5.59.20",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^6.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.9.3",
+    "viem": "^2.38.0",
+    "vite": "^8.1.3",
+    "wagmi": "^2.19.3"
+  }
+}
